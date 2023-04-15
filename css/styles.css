@@ -566,7 +566,7 @@ transition: color var(--transition-duration-func), background-color var(--transi
 
 /* MODAL WINDOW */
 
-.bacdrop {
+.backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -574,6 +574,12 @@ transition: color var(--transition-duration-func), background-color var(--transi
   width: 100%;
   height: 100%;
   background-color: rgba(46, 47, 66, 0.4)
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 .modal {
@@ -601,4 +607,20 @@ padding: 0;
 width: 24px;
 height: 24px;
 border-radius: 50%;
+transition: background-color var(--transition-duration-func);
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+background-color: var(--accent-text-color) ;
+}
+
+.modal-close-btn-icon {
+  fill: var(--title-text-color);
+transition: fill var(--transition-duration-func);
+}
+
+.modal-close-btn:hover .modal-close-btn-icon,
+ .modal-close-btn:focus .modal-close-btn-icon{
+  fill: var(--primary-white-color);
 }
