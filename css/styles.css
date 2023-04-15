@@ -124,7 +124,7 @@ body {
   transition: background-color var(--transition-duration-func);
 }
 .site-nav-item .link:hover::after {
-  background: #404bbf;
+  background-color: var(--accent-text-color);
   border-radius: 2px;
 }
 
