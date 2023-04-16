@@ -112,7 +112,9 @@ body {
   transition: color var(--transition-duration-func);
 }
 
-
+.site-nav .link.current {
+  color: var(--accent-text-color);
+}
 
 .site-nav-item .link.current::after {
   position: absolute;
@@ -125,10 +127,6 @@ body {
   border-radius: 2px;
   transition: background-color var(--transition-duration-func);
 }
-/* .site-nav-item .link::after {
-  background-color: var(--accent-text-color);
-  border-radius: 2px;
-} */
 
 .site-nav-item {
   position: relative;
