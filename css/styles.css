@@ -631,6 +631,7 @@ body {
 .modal-close-btn:hover,
 .modal-close-btn:focus {
   background-color: var(--accent-text-color);
+  cursor: pointer;
 }
 
 .modal-close-btn-icon {
